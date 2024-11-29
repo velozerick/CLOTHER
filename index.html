@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHER - Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="barra-superior">
+        <p>🚚 Envío gratis en compras mayores a $999 MXN. ¡Aprovecha ahora!</p>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <a href="#" class="logo">CLOTHER</a>
+
+        
+        <div class="iconos">
+            <button id="carrito-btn" class="btn">🛒 Carrito</button>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <h1>💥 10% de descuento en tu primera compra 💥</h1>
+        <p>Usa el código: PRIMERACOMPRA</p>
+        <button class="btn">¡COMPRAR AHORA!</button>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categorias" class="categorias">
+        <h2>Categorías</h2>
+        <div class="categorias-grid">
+            <!-- Enlace a la sección de Hombres -->
+            <a href="#hombres" class="categoria">
+                <img src="img/men.jpg" alt="Hombres" height="500">
+                <p>Hombres</p>
+            </a>
+            <!-- Enlace a la sección de Mujeres -->
+            <a href="#mujeres" class="categoria">
+                <img src="img/women.jpg" alt="Mujeres" height="500">
+                <p>Mujeres</p>
+            </a>
+            <!-- Enlace a la sección de Niños -->
+            <a href="#ninos" class="categoria">
+                <img src="img/kid.jpg" alt="Niños" height="500">
+                <p>Niños</p>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="img/cam_cas.jpg" alt="Producto 1">
+                <h3>Camisa Casual</h3>
+                <p>$499 MXN</p>
+                <button class="btn agregar-carrito" data-nombre="Camisa Casual" data-precio="499">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pantalon.jpg" alt="Producto 2" height="500">
+                <h3>Pantalón Mezclilla</h3>
+                <p>$899 MXN</p>
+                <button class="btn agregar-carrito" data-nombre="Pantalón Mezclilla" data-precio="899">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/cam_cas.jpg" alt="Producto 1">
+                <h3>Camisa Casual</h3>
+                <p>$499 MXN</p>
+                <button class="btn agregar-carrito" data-nombre="Camisa Casual" data-precio="499">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pantalon.jpg" alt="Producto 2" height="500">
+                <h3>Pantalón Mezclilla</h3>
+                <p>$899 MXN</p>
+                <button class="btn agregar-carrito" data-nombre="Pantalón Mezclilla" data-precio="899">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="hombres" class="productos">
+        <!-- Sección Hombres -->
+        <h2>Hombres</h2>
+    
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="img/cam_cas.jpg" alt="Camisa Formal">
+                <h3>Camisa Formal</h3>
+                <p>$499 MXN</p>
+                <label for="talla-camisa-formal">Talla:</label>
+                <select id="talla-camisa-formal" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Camisa Formal" data-precio="499" data-talla="talla-camisa-formal">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pc.jpg" alt="Pantalón Chino">
+                <h3>Pantalón Chino</h3>
+                <p>$699 MXN</p>
+                <label for="talla-pantalon-chino">Talla:</label>
+                <select id="talla-pantalon-chino" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Pantalón Chino" data-precio="699" data-talla="talla-pantalon-chino">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pcas.jpg" alt="Playera Casual">
+                <h3>Playera Casual</h3>
+                <p>$299 MXN</p>
+                <label for="talla-playera-casual">Talla:</label>
+                <select id="talla-playera-casual" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Playera Casual" data-precio="299" data-talla="talla-playera-casual">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/sudd.jpg" alt="Sudadera Deportiva">
+                <h3>Sudadera Deportiva</h3>
+                <p>$799 MXN</p>
+                <label for="talla-sudadera-deportiva">Talla:</label>
+                <select id="talla-sudadera-deportiva" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Sudadera Deportiva" data-precio="799" data-talla="talla-sudadera-deportiva">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/cc.jpg" alt="Chaqueta de Cuero">
+                <h3>Chaqueta de Cuero</h3>
+                <p>$1999 MXN</p>
+                <label for="talla-chaqueta-cuero">Talla:</label>
+                <select id="talla-chaqueta-cuero" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Chaqueta de Cuero" data-precio="1999" data-talla="talla-chaqueta-cuero">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/ja.jpg" alt="Jeans Ajustados">
+                <h3>Jeans Ajustados</h3>
+                <p>$599 MXN</p>
+                <label for="talla-jeans-ajustados">Talla:</label>
+                <select id="talla-jeans-ajustados" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Jeans Ajustados" data-precio="599" data-talla="talla-jeans-ajustados">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/abr.jpg" alt="Abrigo Largo">
+                <h3>Abrigo Largo</h3>
+                <p>$1499 MXN</p>
+                <label for="talla-abrigo-largo">Talla:</label>
+                <select id="talla-abrigo-largo" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Abrigo Largo" data-precio="1499" data-talla="talla-abrigo-largo">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/cm.jpg" alt="Chamarra de Mezclilla">
+                <h3>Chamarra de Mezclilla</h3>
+                <p>$899 MXN</p>
+                <label for="talla-chamarra-mezclilla">Talla:</label>
+                <select id="talla-chamarra-mezclilla" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Chamarra de Mezclilla" data-precio="899" data-talla="talla-chamarra-mezclilla">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="mujeres" class="productos">
+        <!-- Sección Mujeres -->
+        <h2>Mujeres</h2>
+    
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="img/bf.jpg" alt="Blusa Formal">
+                <h3>Blusa Formal</h3>
+                <p>$499 MXN</p>
+                <label for="talla-blusa-formal">Talla:</label>
+                <select id="talla-blusa-formal" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Blusa Formal" data-precio="499" data-talla="talla-blusa-formal">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/fcjpg" alt="Falda Casual">
+                <h3>Falda Casual</h3>
+                <p>$699 MXN</p>
+                <label for="talla-falda-casual">Talla:</label>
+                <select id="talla-falda-casual" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Falda Casual" data-precio="699" data-talla="talla-falda-casual">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/vn.jpg" alt="Vestido de Noche">
+                <h3>Vestido de Noche</h3>
+                <p>$2999 MXN</p>
+                <label for="talla-vestido-noche">Talla:</label>
+                <select id="talla-vestido-noche" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Vestido de Noche" data-precio="2999" data-talla="talla-vestido-noche">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/sljpg" alt="Sudadera Ligera">
+                <h3>Sudadera Ligera</h3>
+                <p>$799 MXN</p>
+                <label for="talla-sudadera-ligera">Talla:</label>
+                <select id="talla-sudadera-ligera" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Sudadera Ligera" data-precio="799" data-talla="talla-sudadera-ligera">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/ccm.jpeg" alt="Chaqueta Casual">
+                <h3>Chaqueta Casual</h3>
+                <p>$1499 MXN</p>
+                <label for="talla-chaqueta-casual">Talla:</label>
+                <select id="talla-chaqueta-casual" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Chaqueta Casual" data-precio="1499" data-talla="talla-chaqueta-casual">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/ps.jpeg" alt="Pantalón Skinny">
+                <h3>Pantalón Skinny</h3>
+                <p>$599 MXN</p>
+                <label for="talla-pantalon-skinny">Talla:</label>
+                <select id="talla-pantalon-skinny" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Pantalón Skinny" data-precio="599" data-talla="talla-pantalon-skinny">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/al.jpg" alt="Abrigo de Lana">
+                <h3>Abrigo de Lana</h3>
+                <p>$1999 MXN</p>
+                <label for="talla-abrigo-lana">Talla:</label>
+                <select id="talla-abrigo-lana" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Abrigo de Lana" data-precio="1999" data-talla="talla-abrigo-lana">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/cmm.jpg" alt="Chamarra de Mezclilla">
+                <h3>Chamarra de Mezclilla</h3>
+                <p>$899 MXN</p>
+                <label for="talla-chamarra-mezclilla">Talla:</label>
+                <select id="talla-chamarra-mezclilla" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Chamarra de Mezclilla" data-precio="899" data-talla="talla-chamarra-mezclilla">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+    <section id="ninos" class="productos">
+        <!-- Sección Niños -->
+        <h2>Niños</h2>
+    
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="img/si.jpg" alt="Sudadera Infantil">
+                <h3>Sudadera Infantil</h3>
+                <p>$399 MXN</p>
+                <label for="talla-sudadera-infantil">Talla:</label>
+                <select id="talla-sudadera-infantil" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="2-4">2-4 años</option>
+                    <option value="4-6">4-6 años</option>
+                    <option value="6-8">6-8 años</option>
+                    <option value="8-10">8-10 años</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Sudadera Infantil" data-precio="399" data-talla="talla-sudadera-infantil">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/sw.jpg" alt="Playera Divertida">
+                <h3>Playera </h3>
+                <p>$249 MXN</p>
+                <label for="talla-playera-divertida">Talla:</label>
+                <select id="talla-playera-divertida" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="2-4">2-4 años</option>
+                    <option value="4-6">4-6 años</option>
+                    <option value="6-8">6-8 años</option>
+                    <option value="8-10">8-10 años</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Playera Divertida" data-precio="249" data-talla="talla-playera-divertida">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/ji.jpg" alt="Jeans Infantiles">
+                <h3>Jeans Infantiles</h3>
+                <p>$499 MXN</p>
+                <label for="talla-jeans-infantiles">Talla:</label>
+                <select id="talla-jeans-infantiles" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="2-4">2-4 años</option>
+                    <option value="4-6">4-6 años</option>
+                    <option value="6-8">6-8 años</option>
+                    <option value="8-10">8-10 años</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Jeans Infantiles" data-precio="499" data-talla="talla-jeans-infantiles">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/ci.jpeg" alt="Chaqueta Niños">
+                <h3>Chaqueta Niños</h3>
+                <p>$799 MXN</p>
+                <label for="talla-chaqueta-ninos">Talla:</label>
+                <select id="talla-chaqueta-ninos" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="2-4">2-4 años</option>
+                    <option value="4-6">4-6 años</option>
+                    <option value="6-8">6-8 años</option>
+                    <option value="8-10">8-10 años</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Chaqueta Niños" data-precio="799" data-talla="talla-chaqueta-ninos">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/vi.jpg" alt="Vestido de Niña">
+                <h3>Vestido de Niña</h3>
+                <p>$699 MXN</p>
+                <label for="talla-vestido-nina">Talla:</label>
+                <select id="talla-vestido-nina" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="2-4">2-4 años</option>
+                    <option value="4-6">4-6 años</option>
+                    <option value="6-8">6-8 años</option>
+                    <option value="8-10">8-10 años</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Vestido de Niña" data-precio="699" data-talla="talla-vestido-nina">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pi.jpg" alt="Pijama Infantil">
+                <h3>Pijama Infantil</h3>
+                <p>$399 MXN</p>
+                <label for="talla-pijama-infantil">Talla:</label>
+                <select id="talla-pijama-infantil" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="2-4">2-4 años</option>
+                    <option value="4-6">4-6 años</option>
+                    <option value="6-8">6-8 años</option>
+                    <option value="8-10">8-10 años</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Pijama Infantil" data-precio="399" data-talla="talla-pijama-infantil">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/go.jpg" alt="Gorra Infantil">
+                <h3>Gorra Infantil</h3>
+                <p>$199 MXN</p>
+                <label for="talla-gorra-infantil">Talla:</label>
+                <select id="talla-gorra-infantil" class="talla">
+                    <option value="">Seleccionar</option>
+                    <option value="Única">Única</option>
+                </select>
+                <button class="btn agregar-carrito" data-nombre="Gorra Infantil" data-precio="199" data-talla="talla-gorra-infantil">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 CLOTHER. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal de Carrito -->
+    <div id="carrito-modal" class="modal">
+        <div class="modal-contenido">
+            <h2>🛍 Tu Carrito</h2>
+            <ul id="carrito-lista"></ul>
+            <p id="total">Total: $0 MXN</p>
+            <button id="pagar-btn" class="btn">Proceder al Pago</button>
+            <button id="cerrar-carrito" class="btn-cerrar">Cerrar</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal de Pago -->
+<div id="pago-modal" class="modal">
+    <div class="modal-contenido">
+        <h2>💳 Formulario de Pago</h2>
+        <form id="formulario-pago">
+            <div class="formulario-columnas">
+                <!-- Columna 1 -->
+                <div class="columna">
+                    <label for="nombre">Nombre del Titular</label>
+                    <input type="text" id="nombre" required pattern="[A-ZÑÁÉÍÓÚ ]+" 
+                        placeholder="Solo letras mayúsculas"
+                        oninput="this.value = this.value.toUpperCase().replace(/[^A-ZÑÁÉÍÓÚ ]/g, '')">
+
+                    <label for="direccion">Dirección de Entrega</label>
+                    <textarea id="direccion" placeholder="Calle, número, colonia, ciudad, estado, código postal" required></textarea>
+
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" id="telefono" maxlength="10" required pattern="\d{10}" 
+                        placeholder="10 dígitos"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="columna">
+                    <label for="tarjeta">Número de Tarjeta</label>
+                    <input type="text" id="tarjeta" maxlength="16" required pattern="\d{16}" 
+                        placeholder="Solo 16 dígitos"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+
+                    <label for="expiracion">Fecha de Expiración</label>
+                    <input type="text" id="expiracion" required pattern="\d{2}/\d{2}" 
+                        placeholder="MM/AA"
+                        oninput="this.value = this.value.replace(/[^0-9/]/g, '')">
+
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" maxlength="3" required pattern="\d{3}" 
+                        placeholder="Solo 3 dígitos">
+
+                    <!-- Resumen del Pedido -->
+                    <h3>🛍 Resumen del Pedido</h3>
+                    <ul id="resumen-pedido"></ul>
+                    <p id="total-pedido">Total: $0 MXN</p>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <button type="submit" class="btn">Pagar</button>
+        </form>
+        <button id="cerrar-pago" class="btn-cerrar">Cancelar</button>
+    </div>
+</div>
+
+
+</body>
+</html>
